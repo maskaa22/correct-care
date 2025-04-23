@@ -11,131 +11,145 @@
     <title>Correct Care</title>
   </head>
   <body class="font-['Open_Sans','Helvetica','Arial',sans-serif]">
-    <header class="md:bg-[#064A75] bg-[#042759] fixed w-full z-50">
-      <div class="container mx-auto px-4">
-        <div class="flex justify-between items-center h-16">
-          <img src="./image/logo.png" alt="Correct Care" class="h-10" />
+    <header
+      id="header"
+      class="md:bg-[#064A75] bg-[#042759] fixed w-full z-50 md:py-3"
+    >
+      <div class="container mx-auto px-4 md:px-8">
+        <div class="lg:flex">
+          <div class="flex justify-between items-center h-16 md:mb-7">
+            <img src="./image/logo.png" alt="Correct Care" class="h-10" />
 
-          <button id="burgerBtn" class="lg:hidden p-2">
-            <!--focus:outline-none-->
-            <div class="w-6 h-0.5 bg-white mb-1.5"></div>
-            <div class="w-6 h-0.5 bg-white mb-1.5"></div>
-            <div class="w-6 h-0.5 bg-white"></div>
-          </button>
+            <button id="burgerBtn" class="md:hidden p-2">
+              <!--focus:outline-none-->
+              <div class="w-6 h-0.5 bg-white mb-1.5"></div>
+              <div class="w-6 h-0.5 bg-white mb-1.5"></div>
+              <div class="w-6 h-0.5 bg-white"></div>
+            </button>
 
-          <!-- Звичайне меню -->
-          <!-- <nav class="hidden lg:flex space-x-6">
+            <!-- Звичайне меню -->
+            <!-- <nav class="hidden lg:flex space-x-6">
               <a href="#" class="text-white hover:text-gray-300">Home</a>
               <a href="#" class="text-white hover:text-gray-300">Tour</a>
               <a href="#" class="text-white hover:text-gray-300">Courses</a>
               <a href="#" class="text-white hover:text-gray-300">Contact</a>
             </nav> -->
-        </div>
-
-        <nav id="mobileMenu" class="lg:block hidden pb-8">
-          <ul class="mb-4">
-            <li>
-              <a href="/" class="block text-white py-2 uppercase font-medium"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a href="#" class="block text-white py-2 uppercase font-medium"
-                >Tour</a
-              >
-            </li>
-            <li>
-              <a href="#" class="block text-white py-2 uppercase font-medium"
-                >Courses</a
-              >
-            </li>
-            <li>
-              <a href="#" class="block text-white py-2 uppercase font-medium"
-                >Hr</a
-              >
-            </li>
-            <li>
-              <a href="#" class="block text-white py-2 uppercase font-medium"
-                >Policies</a
-              >
-            </li>
-            <li>
-              <a href="#" class="block text-white py-2 uppercase font-medium"
-                >Policies</a
-              >
-            </li>
-            <li>
-              <a href="#" class="block text-white py-2 uppercase font-medium"
-                >Book a demo</a
-              >
-            </li>
-            <li>
-              <a href="#" class="block text-white py-2 uppercase font-medium"
-                >Contact</a
-              >
-            </li>
-          </ul>
-          <div class="flex justify-center items-center">
-            <a
-              class="bg-[#FECD61] rounded uppercase font-medium text-[12px] w-full py-2 text-center"
-              >Sing in to correct care</a
-            >
           </div>
-        </nav>
+
+          <nav id="mobileMenu" class="md:block md:pb-0 hidden pb-8 lg:flex">
+            <ul class="mb-4 md:flex md:gap-4">
+              <li>
+                <a href="/" class="block text-white py-2 uppercase font-medium"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block text-white py-2 uppercase font-medium"
+                  >Tour</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block text-white py-2 uppercase font-medium"
+                  >Courses</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block text-white py-2 uppercase font-medium"
+                  >Hr</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block text-white py-2 uppercase font-medium"
+                  >Policies</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block text-white py-2 uppercase font-medium"
+                  >Policies</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block text-white py-2 uppercase font-medium"
+                  >Book a demo</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block text-white py-2 uppercase font-medium"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <div
+              class="flex justify-center items-center md:justify-start md:w-fit"
+            >
+              <a
+                class="bg-[#FECD61] rounded uppercase font-medium text-[12px] w-full py-2 text-center md:py-2 md:px-8"
+                >Sing in to correct care</a
+              >
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
 
-    <main class="pt-16 min-h-screen" style="transition: margin-top 0s">
-      <section id="hero" class="pt-12 pb-12">
-        <div class="container mx-auto px-4">
-          <div>
-            <h1
-              class="text-left font-bold text-[44px] leading-tight text-[#042759]"
-            >
-              Transform your Care Training & Policy Compliance from Reactive to
-              Proactive.
-            </h1>
-            <h4 class="mt-7 text-[#748394] text-left">
-              For Care Homes, Nursing Homes and Domiciliary Care Providers.
-            </h4>
-            <div class="mt-7">
-              <a
-                class="cursor-pointer mb-7 flex items-center py-2 px-10 bg-[#fecd61] rounded uppercase w-fit text-xs font-semibold shadow-[0_7px_14px_rgba(13,19,26,0.1),0_3px_6px_rgba(0,0,0,0.1)] lg:transition-transform duration-300 hover:translate-y-0 lg:hover:-translate-y-1"
-                >Call
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="12"
-                  height="12"
+    <main
+      class="pt-16 min-h-screen md:pt-[180px]"
+      style="transition: margin-top 0s"
+    >
+      <section id="hero" class="py-12 bg-[#F8F8F8] md:pb-20">
+        <div class="container mx-auto px-4 md:px-8">
+          <div class="md:flex">
+            <div class="w-[70%]">
+              <h1
+                class="text-left font-bold text-[44px] leading-tight text-[#042759] md:text-5xl md:leading-tight"
+              >
+                Transform your Care Training & Policy Compliance from Reactive
+                to Proactive.
+              </h1>
+              <h4 class="mt-7 text-[#748394] text-left md:max-w-[450px]">
+                For Care Homes, Nursing Homes and Domiciliary Care Providers.
+              </h4>
+              <div class="mt-7 md:flex">
+                <a
+                  class="cursor-pointer mb-7 flex items-center py-2 px-10 bg-[#fecd61] rounded uppercase w-fit text-xs font-semibold shadow-[0_7px_14px_rgba(13,19,26,0.1),0_3px_6px_rgba(0,0,0,0.1)] md:mb-0 md:px-10 md:py-3 md:h-fit md:text-[0.8rem] lg:transition-transform duration-300 hover:translate-y-0 lg:hover:-translate-y-1"
+                  >Call
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="12"
+                    height="12"
+                  >
+                    <path
+                      d="M21.384,17.752a2.108,2.108,0,0,1-.522,3.359,7.543,7.543,0,0,1-5.476.642C10.5,20.523,3.477,13.5,2.247,8.614a7.543,7.543,0,0,1,.642-5.476,2.108,2.108,0,0,1,3.359-.522L8.333,4.7a2.094,2.094,0,0,1,.445,2.328A3.877,3.877,0,0,1,8,8.2c-2.384,2.384,5.417,10.185,7.8,7.8a3.877,3.877,0,0,1,1.173-.781,2.092,2.092,0,0,1,2.328.445Z"
+                    />
+                  </svg>
+                  0333 090 7092</a
                 >
-                  <path
-                    d="M21.384,17.752a2.108,2.108,0,0,1-.522,3.359,7.543,7.543,0,0,1-5.476.642C10.5,20.523,3.477,13.5,2.247,8.614a7.543,7.543,0,0,1,.642-5.476,2.108,2.108,0,0,1,3.359-.522L8.333,4.7a2.094,2.094,0,0,1,.445,2.328A3.877,3.877,0,0,1,8,8.2c-2.384,2.384,5.417,10.185,7.8,7.8a3.877,3.877,0,0,1,1.173-.781,2.092,2.092,0,0,1,2.328.445Z"
-                  />
-                </svg>
-                0333 090 7092</a
-              >
-              <a
-                class="cursor-pointer mt-7 py-2 px-10 shadow-[0_7px_14px_rgba(13,19,26,0.1),0_3px_6px_rgba(0,0,0,0.08)] lg:transition-transform duration-300 hover:translate-y-0 lg:hover:-translate-y-1"
-                >Request a demo</a
-              >
+                <a
+                  class="cursor-pointer mt-7 py-2 px-10 rounded uppercase font-semibold shadow-[0_7px_14px_rgba(13,19,26,0.1),0_3px_6px_rgba(0,0,0,0.08)] md:mt-0 md:px-10 md:py-[10px] md:h-fit md:ml-7 md:text-[0.8rem] lg:transition-transform duration-300 hover:translate-y-0 lg:hover:-translate-y-1"
+                  >Request a demo</a
+                >
+              </div>
+              <img
+                src="./image/skills-for-care.png"
+                alt="skiils for care"
+                class="mt-7"
+              />
             </div>
-            <img
-              src="./image/skills-for-care.png"
-              alt="skiils for care"
-              class="mt-7"
-            />
+            <div class="self-end w-[30%]">
+              <img
+                src="./image/care-worker.png"
+                alt="poster worker"
+                class="md:block hidden"
+              />
+            </div>
           </div>
-          <img
-            src="./image/care-worker.png"
-            alt="poster worker"
-            class="lg:block hidden"
-          />
         </div>
       </section>
 
       <section id="advertisement" class="bg-[#f0f8ff]">
-        <div class="container mx-auto px-4">
-          <ul class="px-6 py-8">
+        <div class="container mx-auto px-4 md:px-8">
+          <ul class="px-6 py-8 md:flex md:gap-8">
             <li>
               <div
                 class="w-20 h-20 bg-[#4A90E2] rounded-full flex justify-center items-center text-[30px] font-bold text-white shadow-[0_7px_14px_rgba(13,19,26,0.1),0_3px_6px_rgba(0,0,0,0.08)]"
@@ -152,7 +166,7 @@
             </li>
             <li>
               <div
-                class="w-20 h-20 mt-9 bg-[#3BB273] rounded-full flex justify-center items-center text-[30px] font-bold text-white shadow-[0_7px_14px_rgba(13,19,26,0.1),0_3px_6px_rgba(0,0,0,0.08)]"
+                class="w-20 h-20 mt-9 bg-[#3BB273] rounded-full flex justify-center items-center text-[30px] font-bold text-white shadow-[0_7px_14px_rgba(13,19,26,0.1),0_3px_6px_rgba(0,0,0,0.08)] md:mt-0"
               >
                 2
               </div>
@@ -166,7 +180,7 @@
             </li>
             <li>
               <div
-                class="w-20 h-20 mt-9 bg-[#F0C554] rounded-full flex justify-center items-center text-[30px] font-bold text-white shadow-[0_7px_14px_rgba(13,19,26,0.1),0_3px_6px_rgba(0,0,0,0.08)]"
+                class="w-20 h-20 mt-9 bg-[#F0C554] rounded-full flex justify-center items-center text-[30px] font-bold text-white shadow-[0_7px_14px_rgba(13,19,26,0.1),0_3px_6px_rgba(0,0,0,0.08)] md:mt-0"
               >
                 3
               </div>
@@ -183,10 +197,10 @@
         </div>
       </section>
 
-      <section id="easy-to-access" class="py-10">
-        <div class="container mx-auto px-4">
-          <div>
-            <div>
+      <section id="easy-to-access" class="py-10 md:pb-16">
+        <div class="container mx-auto px-4 md:px-8">
+          <div class="md:flex md:gap-8">
+            <div class="md:w-[50%]">
               <h2 class="text-left font-semibold text-3xl text-[#042759] mb-6">
                 Easy to access, easy to use
               </h2>
@@ -196,22 +210,28 @@
                 Managers can assign courses to employees with just a few clicks.
               </p>
               <hr class="border-[#064a75] w-9 my-6" />
-              <p class="text-[#666666] text-sm leading-6">
+              <p class="text-[#666666] text-sm leading-6 md:text-[#8a2020]">
                 <span
-                  class="uppercase bg-[#064a75] text-white text-[10px] font-semibold p-2 rounded-[20px]"
+                  class="uppercase bg-[#064a75] text-white text-[10px] font-semibold p-2 rounded-[20px] md:mr-1"
                   >Updated</span
                 >
                 Courses are updated regularly for accuracy and as legislation
                 changes.
               </p>
             </div>
-            <img src="./image/access.png" class="mt-9" />
+            <div class="md:w-[50%]">
+              <img src="./image/access.png" class="mt-9 md:mt-0" />
+            </div>
           </div>
 
-          <div class="mt-10">
-            <h3 class="text-[#2d2355] text-center font-light">Fixed Pricing</h3>
-            <div>
-              <div>
+          <div class="mt-10 md:mt-12">
+            <h3
+              class="text-[#2d2355] text-center font-light md:text-2xl md:mb-3"
+            >
+              Fixed Pricing
+            </h3>
+            <div class="md:flex md:gap-8">
+              <div class="md:w-[60%]">
                 <p class="mb-7 text-[#2d2355]">
                   With Correct Care you don’t pay per named employee, this means
                   when an employee leaves the company you have an empty slot, so
@@ -225,20 +245,22 @@
                   also have the inconvenience of contacting the training company
                   to add the new employee(s) resulting in additional cost.
                 </p>
-                <p class="mb-9 text-[#2d2355]">
+                <p class=" text-[#2d2355]">
                   Have you previously paid for employee training only to find
                   they don’t show up for work the next week? With Correct Care
                   this isn’t a problem.
                 </p>
               </div>
-              <img src="./image/licensing-woman.png" />
+              <div class="md:w-[60%]">
+                <img src="./image/licensing-woman.png" />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section id="keep-in-touch" class="bg-[#f0f8ff] py-10">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-4 md:px-8">
           <h2 class="text-[#042759] text-center font-semibold text-3xl">
             Can’t switch yet? Let us know
           </h2>
@@ -255,16 +277,16 @@
         </div>
       </section>
 
-      <section id="mandatory" class="bg-[#fafafa] py-10">
-        <div class="container mx-auto px-4">
-          <div>
+      <section id="mandatory" class="bg-[#fafafa] py-10 md:pb-16">
+        <div class="container mx-auto px-4 md:px-8">
+          <div class="md:flex md:gap-8">
             <div class="bg-white rounded relative">
               <span
                 class="absolute right-[10px] top-[10px] bg-[#064a75] rounded-[20px] p-[5px] text-[10px] text-white uppercase font-semibold"
                 >Fully trained staff</span
               >
               <div
-                class="flex p-4 items-start bg-white rounded-lg shadow-md space-x-4 max-w-md pt-7"
+                class="flex p-4 items-start bg-white rounded-lg shadow-md space-x-4 max-w-md pt-7 md:py-10"
               >
                 <!-- <img src="./image/iphone.png" alt="laptope with phone" class="w-20 h-20"/> -->
 
@@ -325,13 +347,13 @@
               ></div>
             </div>
 
-            <div class="bg-white rounded relative mt-10">
+            <div class="bg-white rounded relative mt-10 md:mt-0 md:h-fit">
               <span
                 class="absolute right-[10px] top-[10px] bg-[#064a75] rounded-[20px] p-[5px] text-[10px] text-white uppercase font-semibold"
                 >Industry experts</span
               >
               <div
-                class="flex p-4 items-start bg-white rounded-lg shadow-md space-x-4 max-w-md pt-7"
+                class="flex p-4 items-start bg-white rounded-lg shadow-md space-x-4 max-w-md pt-7 md:py-10"
               >
                 <div class="self-start">
                   <svg
@@ -375,8 +397,8 @@
             </div>
           </div>
 
-          <div class="mt-10">
-            <div>
+          <div class="mt-10 md:mt-14 md:flex md:gap-7">
+            <div class="md:w-[70%]">
               <h2 class="text-[#042759] font-semibold text-3xl mb-6">
                 Effortless Setup
               </h2>
@@ -389,19 +411,25 @@
                 meaning your staff can train whenever and wherever they can.
               </p>
             </div>
-            <img
+            <div class="md:w-[30%] md:flex md:items-center">
+              <img
               src="./image/first-foto.png"
               alt="grandmouther with specialist"
-              class="mt-9 rounded-[5px] mb-9"
+              class="mt-9 rounded-[5px] mb-9 md:my-0"
             />
+            </div>
           </div>
-          <div>
-            <img
+
+          <div class="md:flex md:gap-8 md:mt-10">
+            <div class="md:w-[30%]">
+              <img
               src="./image/second-foto.png"
               alt="grandmouther with specialist"
-              class="mt-9 rounded-[5px] mb-9"
+              class="mt-9 rounded-[5px] mb-9 md:my-0"
             />
-            <p class="text-[#252525] text-lg">
+            </div>
+            
+            <p class="text-[#252525] text-lg md:w-[70%]">
               “Our staff have achieved a high success rate with the courses,
               accessing them on their mobiles has been very helpful.”
               <strong>Sarah Parkhurst, Manager, Cedar Care Home</strong>
@@ -412,42 +440,49 @@
     </main>
 
     <footer class="text-xs">
-      <div class="bg-[#064A75] py-10 text-white">
-        <div class="container mx-auto px-4">
+      <div class="bg-[#064A75] py-10 text-white  md:pt-16 md:pb-6">
+        <div class="container mx-auto px-4 md:px-8">
           <div>
-            <div>
-              <ul>
-                <li class="py-2"><a>Home</a></li>
-                <li class="py-2"><a>Pricing</a></li>
-                <li class="py-2"><a>E-Learning for Care</a></li>
-                <li class="py-2"><a>HR made for Care</a></li>
-                <li class="py-2"><a>Terms & Conditions</a></li>
-                <li class="py-2"><a>Privacy Policy</a></li>
-                <li class="py-2"><a>Contact Us</a></li>
-              </ul>
+            <div class="md:flex md:justify-between">
+              <div>
+                <ul>
+                  <li class="py-2"><a>Home</a></li>
+                  <li class="py-2"><a>Pricing</a></li>
+                  <li class="py-2"><a>E-Learning for Care</a></li>
+                  <li class="py-2"><a>HR made for Care</a></li>
+                  <li class="py-2"><a>Terms & Conditions</a></li>
+                  <li class="py-2"><a>Privacy Policy</a></li>
+                  <li class="py-2"><a>Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="mt-9 md:mt-0">
+                <ul>
+                  <li class="py-1"><b>Correct Care Training Ltd</b></li>
+                  <li class="py-1">Hurst Court</li>
+                  <li class="py-1">Nook Lane</li>
+                  <li class="py-1">Ashton Under Lyne</li>
+                  <li class="py-1">OL6 9HN</li>
+                </ul>
+                <img src="./image/fotter-1.png" class="mt-6 md:w-[345px]" />
+              </div>
             </div>
-            <div class="mt-9">
-              <ul>
-                <li class="py-1"><b>Correct Care Training Ltd</b></li>
-                <li class="py-1">Hurst Court</li>
-                <li class="py-1">Nook Lane</li>
-                <li class="py-1">Ashton Under Lyne</li>
-                <li class="py-1">OL6 9HN</li>
-              </ul>
-              <img src="./image/fotter-1.png" class="mt-6" />
+
+            <div class="md:flex md:justify-between">
+              <div></div>
+              <div>
+                <p class="uppercase font-semibold tracking-[1px] mt-6 md:max-w-[345px] md:leading-loose">
+                  Training, E-Learing, Policies and HR for the care industry
+                </p>
+                <img src="./image/fotter-2.png" class="mt-6 md:w-[345px]" />
+              </div>
             </div>
-            <div></div>
-            <div>
-              <p class="uppercase font-semibold tracking-[1px] mt-6">
-                Training, E-Learing, Policies and HR for the care industry
-              </p>
-              <img src="./image/fotter-2.png" class="mt-6" />
-            </div>
+            
+            
           </div>
         </div>
       </div>
-      <div class="bg-[#031c41] text-[#808080] py-7 text-center">
-        <div class="container mx-auto px-4">
+      <div class="bg-[#031c41] text-[#808080] py-7 text-center md:text-start">
+        <div class="container mx-auto px-4 md:px-8">
           <a class="underline"
             >Correct Care, eLearning for the care industry.</a
           >
@@ -459,12 +494,23 @@
       const burgerBtn = document.getElementById("burgerBtn");
       const mobileMenu = document.getElementById("mobileMenu");
       const mainContent = document.querySelector("main");
+      const header = document.querySelector("header");
 
       burgerBtn.addEventListener("click", () => {
         mobileMenu.classList.toggle("hidden");
 
         const menuHeight = mobileMenu.scrollHeight;
         mainContent.style.paddingTop = `calc(4rem + ${menuHeight}px)`;
+      });
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+          header.classList.remove("md:bg-[#064A75]");
+          header.classList.add("md:bg-[#252525]");
+        } else {
+          header.classList.remove("md:bg-[#252525]");
+          header.classList.add("md:bg-[#064A75]");
+        }
       });
     </script>
   </body>
