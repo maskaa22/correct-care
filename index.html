@@ -13,11 +13,11 @@
   <body class="font-['Open_Sans','Helvetica','Arial',sans-serif]">
     <header
       id="header"
-      class="md:bg-[#064A75] bg-[#042759] fixed w-full z-50 md:py-3"
+      class="bg-[#042759] fixed w-full z-50 md:py-3 md:bg-[#064A75] "
     >
       <div class="container mx-auto px-4 md:px-8">
-        <div class="lg:flex">
-          <div class="flex justify-between items-center h-16 md:mb-7">
+        <div class="lg:flex lg:justify-between lg:items-center">
+          <div class="flex justify-between items-center h-16 md:mb-7 lg:mb-0">
             <img src="./image/logo.png" alt="Correct Care" class="h-10" />
 
             <button id="burgerBtn" class="md:hidden p-2">
@@ -36,8 +36,8 @@
             </nav> -->
           </div>
 
-          <nav id="mobileMenu" class="md:block md:pb-0 hidden pb-8 lg:flex">
-            <ul class="mb-4 md:flex md:gap-4">
+          <nav id="mobileMenu" class="md:block md:pb-0 hidden pb-8 lg:flex lg:flex-col lg:items-end">
+            <ul class="mb-4 md:flex md:gap-4 lg:mb-0">
               <li>
                 <a href="/" class="block text-white py-2 uppercase font-medium"
                   >Home</a
@@ -93,7 +93,7 @@
     </header>
 
     <main
-      class="pt-16 min-h-screen md:pt-[180px]"
+      class="pt-16 min-h-screen md:pt-[180px] lg:pt-[120px]"
       style="transition: margin-top 0s"
     >
       <section id="hero" class="py-12 bg-[#F8F8F8] md:pb-20">
@@ -245,7 +245,7 @@
                   also have the inconvenience of contacting the training company
                   to add the new employee(s) resulting in additional cost.
                 </p>
-                <p class=" text-[#2d2355]">
+                <p class="text-[#2d2355]">
                   Have you previously paid for employee training only to find
                   they don’t show up for work the next week? With Correct Care
                   this isn’t a problem.
@@ -413,26 +413,26 @@
             </div>
             <div class="md:w-[30%] md:flex md:items-center">
               <img
-              src="./image/first-foto.png"
-              alt="grandmouther with specialist"
-              class="mt-9 rounded-[5px] mb-9 md:my-0"
-            />
+                src="./image/first-foto.png"
+                alt="grandmouther with specialist"
+                class="mt-9 rounded-[5px] mb-9 md:my-0"
+              />
             </div>
           </div>
 
           <div class="md:flex md:gap-8 md:mt-10">
             <div class="md:w-[30%]">
               <img
-              src="./image/second-foto.png"
-              alt="grandmouther with specialist"
-              class="mt-9 rounded-[5px] mb-9 md:my-0"
-            />
+                src="./image/second-foto.png"
+                alt="grandmouther with specialist"
+                class="mt-9 rounded-[5px] mb-9 md:my-0"
+              />
             </div>
-            
+
             <p class="text-[#252525] text-lg md:w-[70%]">
               “Our staff have achieved a high success rate with the courses,
               accessing them on their mobiles has been very helpful.”
-              <strong>Sarah Parkhurst, Manager, Cedar Care Home</strong>
+              <strong class="block">Sarah Parkhurst, Manager, Cedar Care Home</strong>
             </p>
           </div>
         </div>
@@ -440,10 +440,10 @@
     </main>
 
     <footer class="text-xs">
-      <div class="bg-[#064A75] py-10 text-white  md:pt-16 md:pb-6">
+      <div class="bg-[#064A75] py-10 text-white md:pt-16 md:pb-6">
         <div class="container mx-auto px-4 md:px-8">
-          <div>
-            <div class="md:flex md:justify-between">
+          <div class="lg:flex lg:justify-between">
+            <div class="md:flex md:justify-between lg:gap-32">
               <div>
                 <ul>
                   <li class="py-2"><a>Home</a></li>
@@ -463,21 +463,21 @@
                   <li class="py-1">Ashton Under Lyne</li>
                   <li class="py-1">OL6 9HN</li>
                 </ul>
-                <img src="./image/fotter-1.png" class="mt-6 md:w-[345px]" />
+                <img src="./image/fotter-1.png" class="mt-6 md:w-[345px] lg:w-[212px] lg:mt-0" />
               </div>
             </div>
 
             <div class="md:flex md:justify-between">
               <div></div>
               <div>
-                <p class="uppercase font-semibold tracking-[1px] mt-6 md:max-w-[345px] md:leading-loose">
+                <p
+                  class="uppercase font-semibold tracking-[1px] mt-6 md:max-w-[345px] md:leading-loose  lg:mt-0"
+                >
                   Training, E-Learing, Policies and HR for the care industry
                 </p>
-                <img src="./image/fotter-2.png" class="mt-6 md:w-[345px]" />
+                <img src="./image/fotter-2.png" class="mt-6 md:w-[345px] lg:w-[212px]" />
               </div>
             </div>
-            
-            
           </div>
         </div>
       </div>
@@ -504,12 +504,24 @@
       });
 
       window.addEventListener("scroll", () => {
-        if (window.scrollY > 200) {
-          header.classList.remove("md:bg-[#064A75]");
-          header.classList.add("md:bg-[#252525]");
+        if (window.innerWidth >= 1024) {
+         
+          
+          if (window.scrollY > 200) { console.log(11111);
+            header.classList.remove("md:bg-[#064A75]");
+            header.classList.add("xl:bg-[#042759]");
+          } else {
+            header.classList.remove("xl:bg-[#042759]");
+            header.classList.add("md:bg-[#064A75]");
+          }
         } else {
-          header.classList.remove("md:bg-[#252525]");
-          header.classList.add("md:bg-[#064A75]");
+          if (window.scrollY > 200) {
+            header.classList.remove("md:bg-[#064A75]");
+            header.classList.add("md:bg-[#252525]");
+          } else {
+            header.classList.remove("md:bg-[#252525]");
+            header.classList.add("md:bg-[#064A75]");
+          }
         }
       });
     </script>
